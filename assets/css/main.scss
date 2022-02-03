@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  display: grid;
+  place-items: center center;
+  padding-top: 56px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.app {
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+
+    .content {
+      width: 100%;
+      font-size: 25px;
+      margin-top: 40px;
+    }
+
+    .peek {
+      p {
+        margin-bottom: 0;
+      }
+
+      span {
+        background-color: black;
+        color: white;
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  .selector {
+    display: flex;
+    border: 2px solid black;
+
+    div {
+      padding: 8px 16px;
+      cursor: pointer;
+
+      p {
+        margin: 0;
+        font-size: 25px;
+      }
+    }
+
+    .selected {
+      color: whitesmoke;
+      background-color: black;
+    }
+  }
+
+  .message {
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    padding-top: 33vh;
+    font-size: 40px;
+    letter-spacing: 7px;
+    text-align: center;
+  }
+}
+
+.form-input {
+  width: 290px;
+  border-radius: 0;
+  padding: 4px 8px;
+  font-size: 25px;
+}
+
+.form-input-btn {
+  margin-top: 40px;
+  width: 196px;
+  padding: 8px 16px;
+  font-size: 25px;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.form-input-btn:active {
+  background-color: white;
+  color: black;
+}
+
+.flex-column-centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-margin {
+  margin-top: 8px;
+}
+
+.appear-disappear {
+  animation-name: appearDisappearAnim;
+  animation-duration: 3.5s;
+}
+
+@keyframes appearDisappearAnim {
+  0%   {opacity: 0;}
+  30% {opacity: 0.88;}
+  70% {opacity: 0.88;}
+  100%   {opacity: 0;}
+}
+
+.form-error {
+  background-color: rgba(240, 87, 41, 0.438);
+}
