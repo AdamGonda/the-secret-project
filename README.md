@@ -6,4 +6,4 @@ You can run it with `docker-compose up`
 
 - No tests
 - Little experience with Nuxt
-- Errors not handled
+- Some errors not handled
